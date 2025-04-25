@@ -1,6 +1,6 @@
 export default function AuthFormButton({ children, isLoading }) {
   return (
-    <button className="auth-button" disabled={isLoading}>
+    <button className="auth-button" disabled={isLoading} type="submit" >
       {isLoading ? (
         <span className="loading-dots">
           <span>.</span><span>.</span><span>.</span>

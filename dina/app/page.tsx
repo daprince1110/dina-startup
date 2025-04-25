@@ -91,7 +91,7 @@ export default function LandingPage() {
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center gap-2 text-gray-700">
                   <div className="w-1.5 h-1.5 rounded-full bg-teal-500"></div>
-                  <span>No coding required</span>
+                  <span>No analysist required</span>
                 </li>
                 <li className="flex items-center gap-2 text-gray-700">
                   <div className="w-1.5 h-1.5 rounded-full bg-teal-500"></div>
@@ -111,7 +111,9 @@ export default function LandingPage() {
               <h3 className="font-medium text-teal-800 mb-2">Ready to get started?</h3>
               <p className="text-sm text-teal-700 mb-4">Transform your data into actionable insights today.</p>
               <Button variant="outline" className="w-full mt-4"
-              onClick={() => router.push('/login')}
+              onClick={(e) => 
+                router.push('/login')
+              }
               >Start Free Trial</Button>
             </div>
           </SidebarContent>
@@ -199,7 +201,9 @@ export default function LandingPage() {
             <div className="mt-8">
               <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">Start Free Trial</Button>
               <Button variant="outline" className="w-full mt-4"
-              
+                            onClick={(e) => 
+                              router.push('/login')
+                            }
               >
                 Log in
               </Button>
@@ -219,7 +223,10 @@ export default function LandingPage() {
                 <span className="font-bold text-2xl text-teal-600">Dina</span>
               </div>
               <div className="flex items-center gap-2">
-                <Button variant="outline" size="sm" className="hidden sm:inline-flex">
+                <Button variant="outline" size="sm" className="hidden sm:inline-flex"
+                              onClick={(e) => 
+                                router.push('/login')
+                              }>
                   Log in
                 </Button>
                 <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(true)}>
